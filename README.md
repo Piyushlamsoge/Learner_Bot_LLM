@@ -1,7 +1,10 @@
+
  Learner Bot LLM
 ==============================================
 
 Learner Bot is a simple chatbot built using the Streamlit and Embedchain .This bot is able to learn new things just by adding URL of information you provide and also you able to talk with your data . This bot is build on `Mixtral-8x7B-Instruct-v0.1` LLM 
+
+![Learner bot](https://github.com/Piyushlamsoge/Learner_Bot_LLM/assets/88150820/cb1bf565-433a-46da-bcfc-568d5be1366a)
 
 Getting Started
 ---------------
