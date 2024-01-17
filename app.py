@@ -17,6 +17,7 @@ with st.sidebar:
 
 st.title("Learner Chatbot")
 st.caption("🚀 An app powered by Huggingface!")
+s.caption("Build By Piyush Lamsoge")
 if "messages" not in st.session_state:
     st.session_state.messages = [
         {
