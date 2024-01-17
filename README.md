@@ -13,7 +13,8 @@ To run the Learner Bot locally on your machine, follow these steps:
 3. Create a virtual environment (optional but recommended): `python -m venv env && source env/bin/activate`
 4. Install required packages: `pip install -r requirements.txt`
 5. Run the app: `streamlit run app.py`
-6. Interact with the chatbot by typing messages in the input box at the bottom of the page.
+6. Add your `HuggingFace API` = "hf_xxxxxxxxxxxxx" 
+7. Interact with the chatbot by typing messages in the input box at the bottom of the page.
 
 Project Structure
 -----------------
