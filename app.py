@@ -6,7 +6,31 @@ import os
 
 @st.cache_resource
 def sql_bot():
-    return App.from_config(config_path="Learner.yaml")
+    return App.from_config(
+  config={
+      {
+  "app": {
+    "name": "streamlit-app"
+  },
+  "llm": {
+    "provider": "huggingface",
+    "config": {
+      "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "temperature": 0.1,
+      "max_tokens": 2500,
+      "top_p": 0.1,
+      "stream": true
+    }
+  },
+  "embedder": {
+    "provider": "huggingface",
+    "config": {
+      "model": "sentence-transformers/all-mpnet-base-v2"
+    }
+  }
+}
+
+    )
 
 with st.sidebar:
     huggingface_access_token = st.text_input("Hugging face Token", key="chatbot_api_key", type="password")
