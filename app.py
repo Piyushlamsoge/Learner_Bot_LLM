@@ -6,7 +6,7 @@ import os
 
 @st.cache_resource
 def sql_bot():
-    return App.from_config(config_path="sql.yaml")
+    return App.from_config(config_path="Learner.yaml")
 
 with st.sidebar:
     huggingface_access_token = st.text_input("Hugging face Token", key="chatbot_api_key", type="password")
