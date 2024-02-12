@@ -7,6 +7,11 @@ import os
 @st.cache_resource
 def sql_bot():
     return App.from_config(
+        
+    
+        
+    
+    
         config={
             {
                 "app": {
@@ -28,7 +33,7 @@ def sql_bot():
                         "model": "sentence-transformers/all-mpnet-base-v2"
                     }
                 }
-                )
+    )            
 
 with st.sidebar:
     huggingface_access_token = st.text_input("Hugging face Token", key="chatbot_api_key", type="password")
